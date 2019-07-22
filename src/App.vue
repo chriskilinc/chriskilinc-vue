@@ -1,29 +1,81 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
+    <!-- <div id="nav">
+      <router-link to="/">Home</router-link>|
       <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    </div>-->
+    <section id="header">
+      <div class="circle"></div>
+      <h1>Hello</h1>
+    </section>
+    <router-view />
   </div>
 </template>
 
 <style lang="less">
+:root {
+  --colorTeal: rgba(79, 192, 141, 0.5);
+  --colorRed: hsl(12.7, 97.4%, 55.3%);
+  --colorDarkRed: hsl(345.8, 68.4%, 50.4%);
+  --colorLightRed: hsl(358.7, 100%, 73.5%);
+  --colorOrange: #ff9966;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Rubik", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-}
-#nav {
-  padding: 30px;
+  line-height: 1.4;
+  padding: 5vh 10vw;
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
   a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
+    text-decoration: none;
+    font-size: 1.1em;
+    line-height: 1;
+    color: inherit;
+
+    &.back {
+      color: var(--colorDarkRed);
     }
   }
+}
+#header {
+  .circle {
+    width: 125px;
+    height: 125px;
+    background: var(--colorRed);
+    border-radius: 100px;
+  }
+}
+
+.highlighted {
+  position: relative;
+}
+
+.highlighted::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 66%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+  background-color: var(--colorLightRed);
+  border-radius: 5px 0px;
 }
 </style>

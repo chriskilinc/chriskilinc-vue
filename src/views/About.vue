@@ -1,5 +1,11 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h2>
+      My name is Christopher Kilinc and this is
+      <span class="highlighted">me</span>
+    </h2>
+    <router-link to="/">«</router-link>
   </div>
 </template>
+
+
