@@ -1,9 +1,5 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
-    </div>-->
     <section id="header">
       <div class="circle"></div>
       <h1>Hello</h1>
@@ -48,6 +44,10 @@
     line-height: 1;
     color: inherit;
 
+    &.highlighted:hover::after {
+      top: 10%;
+    }
+
     &.back {
       color: var(--colorDarkRed);
     }
@@ -76,6 +76,6 @@
   bottom: 0;
   transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
   background-color: var(--colorLightRed);
-  border-radius: 5px 0px;
+  border-radius: 0 5px 5px 0px;
 }
 </style>
