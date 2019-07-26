@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <section id="header">
-      <div class="circle"></div>
+      <!-- <div class="circle"></div> -->
       <h1>Hello</h1>
     </section>
     <router-view />
@@ -14,7 +14,9 @@
   --colorRed: hsl(12.7, 97.4%, 55.3%);
   --colorDarkRed: hsl(345.8, 68.4%, 50.4%);
   --colorLightRed: hsl(358.7, 100%, 73.5%);
+  --colorDeepRed: #f41851;
   --colorOrange: #ff9966;
+  --colorCream: #fcfbe3;
 }
 
 #app {
@@ -36,6 +38,7 @@
 
   p {
     font-size: 18px;
+    max-width: 32em;
   }
 
   a {
@@ -44,12 +47,23 @@
     line-height: 1;
     color: inherit;
 
-    &.highlighted:hover::after {
-      top: 10%;
+    &.highlighted:hover {
+      .highlightedSelected();
+    }
+    &.highlighted:focus {
+      .highlightedSelected();
     }
 
     &.back {
       color: var(--colorDarkRed);
+    }
+
+    .highlightedSelected() {
+      color: var(--colorCream);
+      outline: none;
+      &::after {
+        top: 10%;
+      }
     }
   }
 }
@@ -77,5 +91,9 @@
   transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
   background-color: var(--colorLightRed);
   border-radius: 0 5px 5px 0px;
+}
+
+.arrow-back {
+  color: var(--colorLightRed) !important;
 }
 </style>
