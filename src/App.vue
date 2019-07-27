@@ -78,6 +78,7 @@
 
 .highlighted {
   position: relative;
+  white-space: nowrap;
 }
 
 .highlighted::after {

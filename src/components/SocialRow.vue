@@ -1,15 +1,25 @@
 <template>
   <section class="socialrow">
-    <a href="https://github.com/chriskilinc" target="_blank" title="GitHub">
+    <a class="icon" href="https://github.com/chriskilinc" target="_blank" title="GitHub">
       <img class="icon" src="../assets/github_logo.svg" alt="GitHub" />
     </a>
-    <a href="https://www.linkedin.com/in/chriskilinc/" target="_blank" title="LinkedIn">
+    <a
+      class="icon"
+      href="https://www.linkedin.com/in/chriskilinc/"
+      target="_blank"
+      title="LinkedIn"
+    >
       <img class="icon" src="../assets/linkedin_logo.svg" alt="LinkedIn" />
     </a>
-    <a href="https://twitter.com/chriskilinc" target="_blank" title="Twitter">
+    <a class="icon" href="https://twitter.com/chriskilinc" target="_blank" title="Twitter">
       <img class="icon" src="../assets/twitter_logo.svg" alt="Twitter" />
     </a>
-    <!-- <p>SocialRow</p> -->
+    <a
+      href="mailto:chriskilinc@gmail.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="link"
+    >chriskilinc@gmail.com</a>
   </section>
 </template>
 
@@ -27,9 +37,28 @@ export default class SocialRow extends Vue {
 .socialrow {
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   a {
+    &:hover {
+      .selectRules();
+    }
+    &:focus {
+      .selectRules();
+    }
+  }
+
+  .icon {
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.25s;
     margin: 0 14px 0 0;
+    border-bottom: 2.5px solid transparent;
+    outline: none !important;
+  }
+
+  .link {
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.25s;
+    border-bottom: 2.5px solid transparent;
+    outline: none !important;
 
     &:hover {
       .selectRules();
@@ -37,16 +66,21 @@ export default class SocialRow extends Vue {
     &:focus {
       .selectRules();
     }
+  }
 
+  img {
+    height: 28px;
+    height: 28px;
+    padding: 0 0 4px 0;
+  }
+
+  .selectRules() {
     .icon {
-      height: 28px;
-      height: 28px;
-      padding: 0 0 4px 0;
+      border-color: var(--colorLightRed);
+    }
+    &.link {
+      border-color: var(--colorLightRed);
     }
   }
-}
-.selectRules() {
-  border-bottom: 2.5px solid var(--colorLightRed);
-  outline: none;
 }
 </style>
