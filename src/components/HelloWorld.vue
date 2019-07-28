@@ -10,12 +10,6 @@
           <router-link to="/dev" class="highlighted">Software Developer</router-link>
         </span>
         working at If P&amp;C Insurance in Sweden.
-        <br />You can find my open source projects over at
-        <a
-          href="https://github.com/chriskilinc"
-          class="highlighted"
-          target="_blank"
-        >GitHub</a>.
       </p>
       <p>
         Checkout my
@@ -23,7 +17,15 @@
           href="https://www.linkedin.com/in/chriskilinc/"
           class="highlighted"
           target="_blank"
-        >LinkedIn</a> if you are interested in my work experience aswell as education and skill endorsements
+        >LinkedIn</a> if you are interested in my work experience aswell as education and skill endorsements.
+      </p>
+      <p>
+        You can find my open source projects over at
+        <a
+          href="https://github.com/chriskilinc"
+          class="highlighted"
+          target="_blank"
+        >GitHub</a>.
       </p>
       <p>Whenever I'm not programming, I enjoy playing and producing music, sometimes draw, paint and I do occasionally brew beers.</p>
     </section>

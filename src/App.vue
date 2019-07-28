@@ -17,6 +17,13 @@
   --colorDeepRed: #f41851;
   --colorOrange: #ff9966;
   --colorCream: #fcfbe3;
+
+  ::selection {
+    background: var(--colorLightRed); /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: var(--colorLightRed); /* Gecko Browsers */
+  }
 }
 
 #app {
@@ -71,7 +78,7 @@
   .circle {
     width: 125px;
     height: 125px;
-    background: var(--colorRed);
+    background: var(--colorLightRed);
     border-radius: 100px;
   }
 }

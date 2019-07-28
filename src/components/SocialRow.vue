@@ -50,7 +50,7 @@ export default class SocialRow extends Vue {
 
   .icon {
     transition: cubic-bezier(0.19, 1, 0.22, 1) 0.25s;
-    margin: 0 14px 0 0;
+    margin: 0 6px 0 0;
     border-bottom: 2.5px solid transparent;
     outline: none !important;
   }
@@ -69,8 +69,8 @@ export default class SocialRow extends Vue {
   }
 
   img {
-    height: 28px;
-    height: 28px;
+    height: 26px;
+    height: 26px;
     padding: 0 0 4px 0;
   }
 
