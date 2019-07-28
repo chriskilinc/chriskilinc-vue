@@ -69,9 +69,13 @@ export default class SocialRow extends Vue {
   }
 
   img {
-    height: 26px;
+    width: 26px;
     height: 26px;
     padding: 0 0 4px 0;
+    @media screen and (max-width: 450px) {
+      width: 22px;
+      height: 22px;
+    }
   }
 
   .selectRules() {

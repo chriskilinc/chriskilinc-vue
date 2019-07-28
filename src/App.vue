@@ -37,22 +37,35 @@
   h1 {
     font-size: 2.5em;
     margin-bottom: 0;
+    @media screen and (max-width: 450px) {
+      font-size: 1.75em;
+    }
   }
 
   h2 {
     margin-bottom: 0;
+    @media screen and (max-width: 450px) {
+      font-size: 1em;
+    }
   }
 
   p {
     font-size: 18px;
     max-width: 32em;
+    @media screen and (max-width: 450px) {
+      font-size: 1em;
+    }
   }
 
   a {
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1;
     color: inherit;
+
+    @media screen and (max-width: 450px) {
+      font-size: 1em;
+    }
 
     &.highlighted:hover {
       .highlightedSelected();
