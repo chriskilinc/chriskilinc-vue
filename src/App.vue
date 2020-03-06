@@ -2,7 +2,7 @@
   <div id="app">
     <section id="header">
       <!-- <div class="circle"></div> -->
-      <h1>Hello</h1>
+      <h1>Hello!</h1>
     </section>
     <router-view />
   </div>
