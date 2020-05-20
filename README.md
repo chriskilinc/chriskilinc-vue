@@ -38,3 +38,4 @@ docker run -d -p 8080:80 chriskilinc-vue
 This project has an [azure-pipelines.yml](https://github.com/chriskilinc/chriskilinc-vue/blob/master/azure-pipelines.yml) file and a webhook to Azure.  
 Which makes it posible to build the project into an docker image then pushing it to [Docker Hub](https://cloud.docker.com/u/chriskilinc/repository/docker/chriskilinc/chriskilinc-vue).  
 Azure devops will, by the use of webhooks, deploy the application to the web. When a new docker image is available.
+"# normalize" 
