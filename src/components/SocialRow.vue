@@ -1,6 +1,6 @@
 <template>
   <section class="socialrow">
-    <a class="icon" href="https://github.com/chriskilinc" target="_blank" title="GitHub">
+    <a class="icon" href="https://github.com/chriskilinc" target="_blank" title="GitHub" rel="noreferrer noopener">
       <img class="icon" src="../assets/github_logo.svg" alt="GitHub" />
     </a>
     <a
@@ -8,11 +8,12 @@
       href="https://www.linkedin.com/in/chriskilinc/"
       target="_blank"
       title="LinkedIn"
+      rel="noreferrer noopener"
     >
-      <img class="icon" src="../assets/linkedin_logo.svg" alt="LinkedIn" />
+      <img class="icon" src="../assets/linkedin_logo.svg" alt="LinkedIn icon" />
     </a>
-    <a class="icon" href="https://twitter.com/chriskilinc" target="_blank" title="Twitter">
-      <img class="icon" src="../assets/twitter_logo.svg" alt="Twitter" />
+    <a class="icon" href="https://twitter.com/chriskilinc" target="_blank" title="Twitter" rel="noreferrer noopener">
+      <img class="icon" src="../assets/twitter_logo.svg" alt="Twitter icon" />
     </a>
     <a
       href="mailto:chriskilinc@gmail.com"

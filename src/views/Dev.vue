@@ -1,5 +1,5 @@
 <template>
-  <div class="dev">
+  <main class="dev">
     <section>
       <h2>
         My name is Christopher Kilinc and
@@ -14,6 +14,7 @@
           href="https://if.se"
           class="highlighted"
           target="_blank"
+          rel="noreferrer noopener"
         >If P&amp;C Insurance</a> working with Dotnet and TypeScript projects
         using Azure for infrastructure as well as continuous integration and delivery.
       </p>
@@ -24,8 +25,9 @@
           href="https://github.com/chriskilinc"
           class="highlighted"
           target="_blank"
+          rel="noreferrer noopener"
         >GitHub</a> you can find my open source projects.
       </p>
     </section>
-  </div>
+  </main>
 </template>

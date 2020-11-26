@@ -17,6 +17,8 @@
           href="https://www.linkedin.com/in/chriskilinc/"
           class="highlighted"
           target="_blank"
+          rel="noreferrer noopener"
+          rel="noreferrer noopener"
         >LinkedIn</a> if you are interested in my work experience aswell as education and skill endorsements.
       </p>
       <p>

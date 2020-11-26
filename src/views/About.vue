@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <main class="about">
     <section>
       <h2>
         My name is Christopher Kilinc and this is
@@ -7,7 +7,5 @@
       </h2>
       <router-link to="/">«</router-link>
     </section>
-  </div>
+  </main>
 </template>
-
-
